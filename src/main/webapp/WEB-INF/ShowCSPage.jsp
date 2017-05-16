@@ -109,6 +109,7 @@
                                 <th>班级</th>
                                 <th>学号</th>
                                 <th>性别</th>
+                                <th>成绩</th>
                                 <th>课程性质</th>
                                 <th>考试性质</th>
                                 <th>实际学期</th>
@@ -227,7 +228,7 @@
                     "targets": [0.-1]
                 },
                 {
-                    "targets": 10,
+                    "targets": 12,
                     "render": function (a, b, c, d) {
                         var context =
                             {
@@ -398,12 +399,10 @@
                 "classes": obj.classes,
                 "sid": obj.sid,
                 "gender": obj.gender,
-                "score": obj.score
+                "score": obj.score,
                 "course_nature": obj.course_nature,
                 "test_nature": obj.test_nature,
-                "learn_term": obj.learn_term,
-
-
+                "learn_term": obj.learn_term
             }, success: function (data) {
                 table.ajax.reload();
                 $("#myModal").modal("hide");

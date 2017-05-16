@@ -10,7 +10,7 @@ import java.io.IOException;
  * Created by zheng1718 on 17-5-7.
  */
 public class ShowServlet extends HttpServlet {
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String action = request.getParameter("action").trim();	//得到请求动作
         if(action.equals("DE")){
@@ -26,9 +26,9 @@ public class ShowServlet extends HttpServlet {
         }
 
     }
-
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        doPost(request, response);
+        System.out.println(1);
+        doGet(request, response);
     }
 }

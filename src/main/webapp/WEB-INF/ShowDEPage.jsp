@@ -335,7 +335,7 @@
             "sid": $("#sid").val(),
             "gender": $("#gender").val(),
             "pass": $("#pass").val(),
-            "score": $("#score").val(),
+            "score": $("#score").val()
         };
         ajax(addJson);
     }

@@ -181,7 +181,7 @@
                     "targets": [0.-1]
                 },
                 {
-                    "targets": 10,
+                    "targets": 4,
                     "render": function (a, b, c, d) {
                         var context =
                             {

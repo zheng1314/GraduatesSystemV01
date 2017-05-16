@@ -13,6 +13,7 @@ public class ShowGPServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String action = request.getParameter("action").trim();	//得到请求动作
+        System.out.println(action);
         if(action.equals("list")) {
             request.getRequestDispatcher("/WEB-INF/ShowGradePoint/list.jsp").forward(request, response);
         }else if(action.equals("add")) {

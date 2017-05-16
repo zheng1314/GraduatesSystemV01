@@ -39,7 +39,7 @@
                         <a href="/UploadServlet"><span>导入数据</span></a>
                     </li>
                     <li>
-                        <a href="/ShowServlet"><span>数据总览</span></a>
+                        <a href="/ShowServlet?action=DE"><span>数据总览</span></a>
                     </li>
                     <li>
                         <a href="#"><span>数据分析</span></a>

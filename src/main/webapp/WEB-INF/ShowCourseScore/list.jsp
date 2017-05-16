@@ -2,7 +2,6 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="com.school.utils.DBConn" %>
-<%@ page import="com.school.model.award_info" %>
 <%@ page import="java.sql.SQLException" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.HashMap" %>

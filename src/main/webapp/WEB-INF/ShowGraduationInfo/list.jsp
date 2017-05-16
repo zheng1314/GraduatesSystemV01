@@ -2,7 +2,6 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="com.school.utils.DBConn" %>
-<%@ page import="com.school.model.award_info" %>
 <%@ page import="java.sql.SQLException" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.HashMap" %>
@@ -18,7 +17,7 @@
 <%
     ResultSet resultSet = null;
     DBConn dbConn = new DBConn();
-    String table = "award_info";
+    String table = "graduation_info";
 
     String draw = "0";
     draw = request.getParameter("draw");
@@ -28,7 +27,7 @@
     String recordsTotal = "0";
 
     String recordsFiltered = "0";
-    String[] cols = {"","sid","major","award"};
+    String[] cols = {"","gender","employment","major","sid"};
 
     String orderColumn = "0";
     orderColumn = request.getParameter("order[0][column]");

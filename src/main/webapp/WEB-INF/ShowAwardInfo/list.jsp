@@ -52,7 +52,7 @@
         }
         individualSearch += sArray.get(sArray.size()-1);
     }
-    List<award_info> degreeExams = new ArrayList<award_info>();
+    List<award_info> awardInfos = new ArrayList<award_info>();
     award_info awardInfo;
     try {
         if(dbConn != null) {
@@ -82,7 +82,7 @@
                 awardInfo.setMajor(resultSet.getString("major"));
                 awardInfo.setAward(resultSet.getString("award"));
 
-                degreeExams.add(awardInfo);
+                awardInfos.add(awardInfo);
             }
 
             if (searchValue != "") {
@@ -99,7 +99,7 @@
         e.printStackTrace();
     }finally {
         Map<Object, Object> info = new HashMap<Object, Object>();
-        info.put("data", degreeExams);
+        info.put("data", awardInfos);
         info.put("recordsTotal", recordsTotal);
         info.put("recordsFiltered", recordsFiltered);
         info.put("draw", draw);

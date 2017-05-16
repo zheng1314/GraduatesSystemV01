@@ -99,6 +99,7 @@
                                 <th>就业单位</th>
                                 <th>专业</th>
                                 <th>学号</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                         </table>
@@ -185,7 +186,7 @@
                     "targets": [0.-1]
                 },
                 {
-                    "targets": 10,
+                    "targets": 5,
                     "render": function (a, b, c, d) {
                         var context =
                             {

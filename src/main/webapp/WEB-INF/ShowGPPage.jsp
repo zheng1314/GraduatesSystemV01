@@ -228,7 +228,7 @@
                     "targets": [0.-1]
                 },
                 {
-                    "targets": 10,
+                    "targets": 12,
                     "render": function (a, b, c, d) {
                         var context =
                             {
@@ -359,7 +359,7 @@
             "point": $("#point").val(),
             "notlearned_credit": $("#notlearned_credit").val(),
             "graduation_audit": $("#graduation_audit").val(),
-            "degree_audit": $("#degree_audit").val(),
+            "degree_audit": $("#degree_audit").val()
         };
         ajax(addJson);
     }
@@ -400,12 +400,10 @@
                 "gender": obj.gender,
                 "total_credit": obj.total_credit,
                 "learned_credit": obj.learned_credit,
-                "point": obj.point
+                "point": obj.point,
                 "notlearned_credit": obj.notlearned_credit,
                 "graduation_audit": obj.graduation_audit,
-                "degree_audit": obj.degree_audit,
-
-
+                "degree_audit": obj.degree_audit
             }, success: function (data) {
                 table.ajax.reload();
                 $("#myModal").modal("hide");
